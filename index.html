@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>BubbleChart-Swift iOS by alessign</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>BubbleChart-Swift iOS</h1>
+        <p>Source: www.blnzapp.com</p>
+
+        <p class="view"><a href="https://github.com/alessign/BubbleChart---Swift">View the Project on GitHub <small>alessign/BubbleChart---Swift</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/alessign/BubbleChart---Swift/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/alessign/BubbleChart---Swift/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/alessign/BubbleChart---Swift">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><img src="http://www.viralideasltd.com/github/cast.gif" alt=""></p>
+
+<h1>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h1>
+
+<hr>
+
+<p>BubbleChart graph is light-weight simple solution to draw graph with weekly data (Mo - Sun). </p>
+
+<h1>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h1>
+
+<hr>
+
+<ul>
+<li>iOS 9.3<br>
+</li>
+</ul>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h1>
+
+<hr>
+
+<ul>
+<li>Simply drag and drop BubbleChartView.swift to your project</li>
+<li>
+<p>Set up device rotation
+`override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {</p>
+
+<pre><code>if toInterfaceOrientation == .LandscapeLeft{
+
+    let bubbleView = BubbleChartView()
+    bubbleView.tag = 1001
+    bubbleView.arrayOfValues = ["3.4", "-3.1", "3.1", "5.4", "2.7"]
+    self.view.addSubview(bubbleView)
+
+}
+else if toInterfaceOrientation == .Portrait{
+
+    for subView in self.view.subviews {
+
+        if subView.tag == 1001{
+            subView.removeFromSuperview()
+        }
+    }
+}
+</code></pre>
+
+<p>}`</p>
+</li>
+<li>You're done!<br>
+</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="source-wwwblnzappcom" class="anchor" href="#source-wwwblnzappcom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Source: <a href="http://www.blnzapp.com">www.blnzapp.com</a>
+</h1>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/alessign">alessign</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
