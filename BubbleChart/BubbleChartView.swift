@@ -48,6 +48,7 @@ class BubbleChartView: UIView {
         
         let view = UIView(frame: rect)
         
+        // background gradient color
         let grad = CAGradientLayer()
         grad.frame = view.bounds
         
@@ -148,13 +149,16 @@ class BubbleChartView: UIView {
                 status = "alkaline"
             }
             
+            // handle size bigger than maximum allowed
             if circleSize > Double(maxSize){
                circleSize = Double(maxSize)
             }
+            // handle size smaller than minimum
             if circleSize < Double(minSize){
                circleSize = Double(minSize)
             }
         
+            // formula to create path for each circle in loop increment
             let bPath:UIBezierPath = UIBezierPath(ovalInRect: CGRectMake(-xSections, yPoint - CGFloat(circleSize/2), CGFloat(circleSize), CGFloat(circleSize)))
             let circleLayer = CAShapeLayer()
             circleLayer.path = bPath.CGPath
