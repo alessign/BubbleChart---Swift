@@ -55,8 +55,9 @@
 <ul>
 <li>Simply drag and drop BubbleChartView.swift to your project</li>
 <li>
-<p>Set up device rotation
-`override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {</p>
+<p>Set up device rotation</p>
+
+<p>`override func willRotateToInterfaceOrientation(toInterfaceOrientation: UIInterfaceOrientation, duration: NSTimeInterval) {</p>
 
 <pre><code>if toInterfaceOrientation == .LandscapeLeft{
 
@@ -75,9 +76,8 @@ else if toInterfaceOrientation == .Portrait{
         }
     }
 }
+}`
 </code></pre>
-
-<p>}`</p>
 </li>
 <li>You're done!<br>
 </li>
@@ -86,8 +86,20 @@ else if toInterfaceOrientation == .Portrait{
 <hr>
 
 <h1>
+<a id="note" class="anchor" href="#note" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>NOTE!</h1>
+
+<p>The arrayOfValues is expecting maximum 7 objects. Filter your data before displaying the BubbleChartView on rotation change, or adjust the code to accept more values</p>
+
+<hr>
+
+<h2>
+<a id="licence-free" class="anchor" href="#licence-free" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Licence: Free</h2>
+
+<hr>
+
+<h2>
 <a id="source-wwwblnzappcom" class="anchor" href="#source-wwwblnzappcom" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Source: <a href="http://www.blnzapp.com">www.blnzapp.com</a>
-</h1>
+</h2>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/alessign">alessign</a></p>
