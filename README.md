@@ -32,6 +32,12 @@ BubbleChart graph is light-weight simple solution to draw graph with weekly data
         }
 
 * You're done!
+ 
+# NOTE!
+The arrayOfValues is expecting maximum 7 objects. Filter your data before displaying the BubbleChartView on rotation change, or adjust the code to accept more values
+
+# Licence
+Free
 
 ## Source: www.blnzapp.com
 
